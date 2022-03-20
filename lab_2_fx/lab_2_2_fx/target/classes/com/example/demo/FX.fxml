@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="297.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="300.0">
+      <Button fx:id="btn" mnemonicParsing="false" text="Кнопка" />
+      <CheckBox fx:id="ch1" mnemonicParsing="false" onAction="#click_on" />
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="300.0">
+      <Label fx:id="tx" text="Текст" />
+      <CheckBox fx:id="ch2" mnemonicParsing="false" onAction="#click_on" />
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="300.0">
+      <Slider fx:id="sld" />
+      <CheckBox fx:id="ch3" mnemonicParsing="false" onAction="#click_on" />
+   </HBox>
+</VBox>

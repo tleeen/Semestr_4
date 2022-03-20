@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="887.0" spacing="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_2_3_fx.Controller">
+   <VBox alignment="CENTER_LEFT" prefHeight="356.0" prefWidth="887.0" spacing="15.0">
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="749.0" spacing="100.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Блюдо" textAlignment="CENTER" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style Bold" size="24.0" />
+            </font>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Состав" textAlignment="CENTER" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style Bold" size="24.0" />
+            </font>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Цена, руб">
+            <font>
+               <Font name="Bookman Old Style Bold" size="24.0" />
+            </font>
+         </Text>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="749.0" spacing="100.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Салат с маринованными артишоками" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Артишоки маринованные, филе запеченого перца, черри, руккола, кольца красного лука со сладким соусом чили, 210 г." wrappingWidth="200.0">
+            <font>
+               <Font name="System Italic" size="12.0" />
+            </font>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="590">
+            <font>
+               <Font name="System Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Button fx:id="btn1" mnemonicParsing="false" onAction="#click_on_one" prefHeight="25.0" prefWidth="130.0" text="Заказать" />
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="135.0" prefHeight="28.0" prefWidth="749.0" spacing="100.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Рататуй овощной" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Помидор, кабачки, баклажаны, перец болгарский, лук шалот, 150/130 г." wrappingWidth="200.0">
+            <font>
+               <Font name="System Italic" size="12.0" />
+            </font>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="620">
+            <font>
+               <Font name="System Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Button fx:id="btn2" mnemonicParsing="false" onAction="#click_on_two" prefHeight="25.0" prefWidth="130.0" text="Заказать" />
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="93.0" prefHeight="28.0" prefWidth="749.0" spacing="100.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Картофель запеченый в печи" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="с постными сосисками в горчичном соусе и маринованными грибами с красным луком, 360/50/30 г." wrappingWidth="200.0">
+            <font>
+               <Font name="System Italic" size="12.0" />
+            </font>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="450">
+            <font>
+               <Font name="System Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Button fx:id="btn3" mnemonicParsing="false" onAction="#click_on_three" prefHeight="25.0" prefWidth="130.0" text="Заказать" />
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="51.0" prefHeight="28.0" prefWidth="749.0" spacing="100.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Борщ постный" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="с чесночными гренками и постной сметаной, 300/15/50 г." wrappingWidth="200.0">
+            <font>
+               <Font name="System Italic" size="12.0" />
+            </font>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="380">
+            <font>
+               <Font name="System Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Button fx:id="btn4" mnemonicParsing="false" onAction="#click_on_four" prefHeight="25.0" prefWidth="130.0" text="Заказать" />
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="749.0" spacing="100.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Рулет «Весенний»" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Блинный рулет с обжаренной фасолью, грибами вешенками, морковью и горошком, подается со сладким чили соусом, 150/50 г" wrappingWidth="200.0">
+            <font>
+               <Font name="System Italic" size="12.0" />
+            </font>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="430">
+            <font>
+               <Font name="System Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Button fx:id="btn5" mnemonicParsing="false" onAction="#click_on_five" prefHeight="25.0" prefWidth="130.0" text="Заказать" />
+      </HBox>
+   </VBox>
+   <Separator prefWidth="200.0" />
+   <Separator layoutX="10.0" layoutY="380.0" prefWidth="200.0" />
+   <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="356.0" prefWidth="887.0" spacing="15.0">
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="749.0" spacing="100.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Чек" wrappingWidth="50.0">
+            <font>
+               <Font name="Bookman Old Style" size="24.0" />
+            </font>
+         </Text>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="749.0" spacing="40.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Блюдо" textAlignment="CENTER" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style" size="18.0" />
+            </font>
+         </Text>
+         <Separator orientation="VERTICAL" prefHeight="200.0" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Колличество" textAlignment="CENTER" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style" size="18.0" />
+            </font>
+         </Text>
+         <Separator orientation="VERTICAL" prefHeight="200.0" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Итоговая стоимость позиции" textAlignment="CENTER" wrappingWidth="100.0">
+            <font>
+               <Font name="Bookman Old Style" size="18.0" />
+            </font>
+         </Text>
+         <Separator orientation="VERTICAL" prefHeight="200.0" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Сумма Заказа" textAlignment="CENTER" wrappingWidth="100.0">
+            <font>
+               <Font name="Bookman Old Style" size="18.0" />
+            </font>
+         </Text>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="749.0" spacing="100.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Салат с маринованными артишоками" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="col1" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="200.0">
+            <font>
+               <Font name="System Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="pr1" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <font>
+               <Font name="System Italic" size="18.0" />
+            </font>
+         </Text>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="135.0" prefHeight="28.0" prefWidth="749.0" spacing="100.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Рататуй овощной" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="col2" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="200.0">
+            <font>
+               <Font name="System Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="pr2" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <font>
+               <Font name="System Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="fpr" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="130.0">
+            <font>
+               <Font name="Bookman Old Style Bold Italic" size="18.0" />
+            </font>
+         </Text>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="93.0" prefHeight="28.0" prefWidth="749.0" spacing="100.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Картофель запеченый в печи" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="col3" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="200.0">
+            <font>
+               <Font name="System Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="pr3" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <font>
+               <Font name="System Italic" size="18.0" />
+            </font>
+         </Text>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="51.0" prefHeight="28.0" prefWidth="749.0" spacing="100.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Борщ постный" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="col4" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="200.0">
+            <font>
+               <Font name="System Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="pr4" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <font>
+               <Font name="System Italic" size="18.0" />
+            </font>
+         </Text>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="749.0" spacing="100.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Рулет «Весенний»" wrappingWidth="200.0">
+            <font>
+               <Font name="Bookman Old Style Bold Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="col5" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="200.0">
+            <font>
+               <Font name="System Italic" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="pr5" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <font>
+               <Font name="System Italic" size="18.0" />
+            </font>
+         </Text>
+      </HBox>
+   </VBox>
+</VBox>

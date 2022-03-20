@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="245.0" prefWidth="777.0" spacing="100.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_2_javafx.Controller">
+    <TextField fx:id="tx1" onDragDetected="#setArrow" onMouseClicked="#setArrow"/>
+    <Button fx:id="btn" mnemonicParsing="false" onAction="#click" prefHeight="58.0" prefWidth="157.0" text="&lt;-">
+        <font>
+            <Font size="36.0" />
+        </font>
+    </Button>
+    <TextField fx:id="tx2" onMouseClicked="#setArrow"/>
+</HBox>
