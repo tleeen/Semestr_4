@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="484.0" spacing="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_4_java.Controller">
+    <Separator prefHeight="115.0" prefWidth="484.0" />
+    <Text fx:id="txt" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="484.13671875">
+        <font>
+            <Font name="System Bold Italic" size="24.0" />
+        </font>
+    </Text>
+    <Separator prefHeight="115.0" prefWidth="484.0" />
+    <Button fx:id="btncl" mnemonicParsing="false" onAction="#click_on_clear" prefHeight="25.0" prefWidth="483.0" text="Clear">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font></Button>
+    <Separator prefHeight="108.0" prefWidth="484.0" />
+    <VBox prefHeight="521.0" prefWidth="478.0" spacing="40.0">
+        <HBox prefHeight="100.0" prefWidth="200.0" spacing="34.0">
+            <Button fx:id="btn1" mnemonicParsing="false" onAction="#click_on_one" prefHeight="96.0" prefWidth="96.0" text="1">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="btn2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_on_two" prefHeight="96.0" prefWidth="96.0" text="2">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="btn3" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_on_three" prefHeight="96.0" prefWidth="96.0" text="3">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="btnpl" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_on_plus" prefHeight="96.0" prefWidth="96.0" text="+">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="34.0">
+            <Button fx:id="btn4" mnemonicParsing="false" onAction="#click_on_four" prefHeight="96.0" prefWidth="96.0" text="4">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="btn5" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_on_five" prefHeight="96.0" prefWidth="96.0" text="5">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="btn6" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_on_six" prefHeight="96.0" prefWidth="96.0" text="6">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="btnmi" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_on_minus" prefHeight="96.0" prefWidth="96.0" text="-">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="34.0">
+            <Button fx:id="btn7" mnemonicParsing="false" onAction="#click_on_seven" prefHeight="96.0" prefWidth="96.0" text="7">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="btn8" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_on_eight" prefHeight="96.0" prefWidth="96.0" text="8">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="btn9" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_on_nine" prefHeight="96.0" prefWidth="96.0" text="9">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="btnum" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_on_umn" prefHeight="96.0" prefWidth="96.0" text="*">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="34.0">
+            <Button fx:id="btntoch" mnemonicParsing="false" onAction="#click_on_toch" prefHeight="96.0" prefWidth="96.0" text=".">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="btn0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_on_zero" prefHeight="96.0" prefWidth="96.0" text="0">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="btnent" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_on_enter" prefHeight="96.0" prefWidth="96.0" text="=">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="btnde" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_on_del" prefHeight="96.0" prefWidth="96.0" text="/">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+        </HBox>
+    </VBox>
+</VBox>
