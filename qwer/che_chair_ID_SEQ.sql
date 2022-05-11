@@ -1,0 +1,2 @@
+SELECT chair_ID_SEQ.CURRVAL
+FROM SYS.dual;
