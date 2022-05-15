@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0"
+            prefWidth="864.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.lab_5_java.DB.Controller">
+    <TableView fx:id="Date_base_table" prefHeight="215.0" prefWidth="864.0">
+        <columns>
+            <TableColumn fx:id="table_id" prefWidth="75.0" text="ID"/>
+            <TableColumn fx:id="table_title_p" prefWidth="353.0" text="Название продукта"/>
+            <TableColumn fx:id="table_col_p" prefWidth="433.0" text="Колличество продкута"/>
+        </columns>
+    </TableView>
+    <TextField fx:id="textQuery" layoutX="168.0" layoutY="226.0" prefHeight="25.0" prefWidth="529.0"/>
+    <Button fx:id="btn_f" layoutX="382.0" layoutY="260.0" mnemonicParsing="false" onAction="#filt"
+            text="Отфильтровать"/>
+</AnchorPane>
