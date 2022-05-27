@@ -1,5 +1,0 @@
-create sequence Sportsman_ID_SEQ
-INCREMENT BY 1
-START WITH 800
-MAXVALUE 810
-/

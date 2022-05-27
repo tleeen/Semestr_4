@@ -1,5 +1,0 @@
-create sequence Rewarding_ID_SEQ
-INCREMENT BY 1
-START WITH 400
-MAXVALUE 410
-/
