@@ -1,2 +1,0 @@
-101:C:\Users\79236\Desktop\Lab_3_c++\Server.dll
-102:C:\Users\79236\Desktop\Lab_3_c++\Server.dll
