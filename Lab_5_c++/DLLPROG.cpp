@@ -5,40 +5,48 @@ using namespace std;
 
 int main()
 {
-    HINSTANCE h;
-    HRESULT res;
-    NewClassFactory* factory;
-    FunctionArg GetClassObject, CreateInstance;
-    FunctionNotArg FreeUnusedLibraries;
-    h = LoadLibrary("managerDll.dll");
-
-    GetClassObject = (FunctionArg) GetProcAddress(h, "GetClassObject");
-    FreeUnusedLibraries = (FunctionNotArg) GetProcAddress(h, "FreeUnusedLibraries");
-    CreateInstance = (FunctionArg) GetProcAddress(h, "CreateInstance");
-    
-    res = GetClassObject(CLSID_NewServer, IID_NewClassFactory, (void**)&factory);
-
-    if (res == S_OK)
+    CoInitialize(NULL);
+    Info* inf = NULL;
+    IClassFactory* factory = NULL;
+    HRESULT resFactory;
+    resFactory = CoGetClassObject(CLSID_Server, CLSCTX_INPROC_SERVER, NULL, guid::IID_IClassFactory, (void**)&factory);
+    if (SUCCEEDED(resFactory))
     {
-        Info* fIX = NULL;
-        res = factory->CreateInstance(NULL, IID_IServer, (void**)&fIX);
-        {
-            fIX->Enter();
-            fIX->Print();
+        HRESULT res;
+        Info* inf = NULL;
+        res = factory->CreateInstance(NULL, IID_IServer, (void**)&inf);
+        if (SUCCEEDED(res)){
+            inf->Enter();
+            inf->Print();
         }
-        NewFunction* fIZ = NULL;
-        res = fIX->QueryInterface(IID_IServer3, (void**)&fIZ);
-        if (res == S_OK)
+        Operations* op = NULL;
+        res = inf->QueryInterface(IID_IServer2, (void**)&op);
+        if (SUCCEEDED(res))
         {
-            fIZ->Sin(3, 3, 3);
-            fIZ->Cos(4, 4, 4);
-            fIZ->Colinarity(5, 5, 5);
-            fIZ->Angle(6, 6, 6);
+            op->GetLength();
+            op->Diff(5, 5, 5);
+            op->Mult(5, 5, 5);
+            op->Add(5, 5, 5);
         }
-        fIX->Release();
-        fIZ->Release();
+        NewFunction* nf = NULL;
+        res = op->QueryInterface(IID_IServer3, (void**)&nf);
+        if (SUCCEEDED(res))
+        {
+            nf->Angle(5, 5, 5);
+            nf->Colinarity(5, 5, 5);
+            nf->Cos(5, 5, 5);
+            nf->Sin(5, 5, 5);
+        }
+        inf->Release();
+        op->Release();
+        nf->Release();
+
         factory->Release();
     }
-    FreeUnusedLibraries();
-    FreeLibrary(h);
+    else
+    {
+        cout << "1111";
+    }
+
+    CoUninitialize();
 }

@@ -8,7 +8,7 @@ g++ -c cpp/NewServer.cpp -o o/NewServer.o
 g++ -c cpp/NewClassFactory.cpp -o o/NewClassFactory.o
 g++ -c managerDll.cpp -o o/managerDll.o
 
-g++ -shared ./o/Server.o ./o/MDLL.o ./o/ClassFactory.o ./o/NewServer.o ./o/NewClassFactory.o -o Server.dll -Wl,--kill-at
+g++ -shared ./o/Server.o ./o/MDLL.o ./o/ClassFactory.o ./o/NewServer.o ./o/NewClassFactory.o -o Server.dll -lole32 -loleaut32 -luser32 -Wl,--kill-at
 g++ -shared ./o/managerDll.o -o managerDll.dll -Wl,--kill-at
 
 @REM pause
